@@ -1,0 +1,170 @@
+/* ================== GENERAL STYLES ================== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f1ec;
+    color: #333;
+}
+
+/* ================== HEADER & NAVIGATION ================== */
+header {
+    background-color: #4b2e1e;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ================== HERO SECTION (HOME PAGE) ================== */
+.hero {
+    background-color: #6f4e37;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #d2b48c;
+    color: #4b2e1e;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #c59e74;
+}
+
+/* ================== CONTENT SECTIONS ================== */
+.content {
+    padding: 30px;
+    text-align: center;
+}
+
+.content h2, .content h3 {
+    color: #4b2e1e;
+    margin-bottom: 15px;
+}
+
+.content p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* ================== PRODUCTS LIST ================== */
+.content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.content ul li {
+    padding: 8px;
+    font-weight: bold;
+}
+
+/* ================== GALLERY ================== */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* ================== CONTACT FORM ================== */
+form input,
+form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+form button {
+    background-color: #4b2e1e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #6f4e37;
+}
+
+/* ================== FOOTER ================== */
+footer {
+    background-color: #4b2e1e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* ================== MOBILE RESPONSIVENESS ================== */
+@media screen and (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+
+    .hero {
+        padding: 30px 10px;
+    }
+
+    form input, form textarea {
+        width: 95%;
+    }
+}
